@@ -95,7 +95,6 @@ body p {
   body p {
     display: flex;
     align-items: center;
-    flex-direction: center;
     justify-content: center;
     transition: 0.3s;
     font-size: 1.3rem;
@@ -112,7 +111,6 @@ body p {
   body p {
     display: flex;
     align-items: center;
-    flex-direction: center;
     justify-content: center;
     transition: 0.3s;
     font-size: 1.1rem;
@@ -128,7 +126,6 @@ body p {
   body p {
     display: flex;
     align-items: center;
-    flex-direction: center;
     justify-content: center;
     transition: 0.3s;
     font-size: 0.9rem;
