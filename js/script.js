@@ -4,12 +4,16 @@ function updateOSOptions() {
 
   osChoice.innerHTML = '';
 
-  if (deviceChoice === 'Desktop') {
-    const options = ['Windows', 'MacOS', 'Linux', 'Other'];
+  if (deviceChoice === 'desktop' || deviceChoice === 'laptop') {
+    const options = ['MacOS', 'Windows', 'Linux', 'Other'];
     addOptions(osChoice, options);
   }
-  else if (deviceChoice === 'Tablet'){
-    const options = ['iOS', 'Android', 'Other'];
+  else if (deviceChoice === 'smartphone') {
+    const options = ['iOS', 'Android', 'Windows', 'Other'];
+    addOptions(osChoice, options);
+  }
+  else if (deviceChoice === 'tablet') {
+    const options = ['iPadOS', 'Android', 'Windows', 'Other'];
     addOptions(osChoice, options);
   }
   else {
