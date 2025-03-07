@@ -15,7 +15,7 @@
   <body>
     <h1>Open Beta Testing Sign-Up</h1>
     <p>
-      Thank you for your interest in our open beta testing program. Please fill
+      Thank you for your interest in our open beta testing program! Please fill
       out the form below to sign up.
     </p>
     <form class="form" action="submit.php" method="post">
@@ -26,7 +26,8 @@
       <label for="phone">Phone:</label>
       <input type="tel" id="phone" name="phone" required />
       <label for="device">Device:</label>
-      <select id="device" name="device" required>
+      <select id="device" name="device" onchange="updateOSOptions()" required>
+        <option value="">Select Device</option>
         <option value="desktop">Desktop</option>
         <option value="laptop">Laptop</option>
         <option value="tablet">Tablet</option>
@@ -34,11 +35,10 @@
       </select>
       <label for="device">Operating System:</label>
       <select id="os" name="os" required>
-        <option value="Windows">Windows</option>
-        <option value="macOS">macOS</option>
-        <option value="Linux">Linux</option>
-        <option value="Other">Other</option>
+        <option value="">Select a Device</option>"
       </select>
     </form>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
