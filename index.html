@@ -18,7 +18,7 @@
       Thank you for your interest in our open beta testing program! Please fill
       out the form below to sign up.
     </p>
-    <form class="form" action="submit.php" method="post">
+    <form class="form" onsubmit="event.preventDefault(); window.location.reload();"> 
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required />
       <label for="email">Email:</label>
@@ -37,6 +37,8 @@
       <select id="os" name="os" required>
         <option value="">Select a Device</option>"
       </select>
+
+      <input class="button" type="submit" value="Submit"/>
     </form>
 
     <script src="js/script.js"></script>
