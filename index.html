@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/meyers-resets.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
       Thank you for your interest in our open beta testing program! Please fill
       out the form below to sign up.
     </p>
-    <form class="form" onsubmit="event.preventDefault(); window.location.reload();"> 
+    <form class="form" method="get" action="#null" autocomplete="on" onsubmit="event.preventDefault(); window.location.reload();">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
       <label for="email">Email:</label>
@@ -37,8 +38,7 @@
       <select id="os" name="os" required>
         <option value="">Select a Device</option>
       </select>
-
-      <input class="button" type="submit" value="Submit">
+      <input class="button" type="submit" value="Begin Testing!">
     </form>
   </body>
 </html>
